@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+
 #define MODULO 100
 
 unsigned int seed = (unsigned)time(NULL);
