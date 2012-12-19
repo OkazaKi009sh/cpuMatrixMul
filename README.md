@@ -4,10 +4,10 @@ cpuMul
 CPUでの行列積演算
 
 #使い方
-Visual Studioのコマンドプロンプトで
+Visual Studioのコマンドプロンプトで  
 `nvcc -o cpuMul.exe cpuMul.cu`
-を実行
-次に
+を実行  
+次に  
 `cpuMul.exe`
 を実行
 #注意点
