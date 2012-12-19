@@ -5,10 +5,10 @@ CPUでの行列積演算
 
 #使い方
 Visual Studioのコマンドプロンプトで  
-`nvcc -o cpuMatrixMul.exe cpuMatrixMul.cu`
+`nvcc -o cpuMatrixMul.exe cpuMatrixMul.cu`  
 を実行  
 次に  
-`cpuMatrixMul.exe`
+`cpuMatrixMul.exe`  
 を実行
 #注意点
 * 乱数生成が微妙
