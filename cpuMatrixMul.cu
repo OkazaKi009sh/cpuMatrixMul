@@ -5,7 +5,7 @@
 
 unsigned int seed = (unsigned)time(NULL);
 
-void MatrixMultiplication(float* M, float* N, float* P, int Width) {
+void MatrixMultiplication(float* M, float* N, float* P, long Width) {
 	for (int i = 0; i < Width; ++i) {
 		for(int j = 0; j < Width; ++j) {
 			float sum = 0;
@@ -18,7 +18,7 @@ void MatrixMultiplication(float* M, float* N, float* P, int Width) {
 		}
 	}
 }
-void printMatrix(float* T, int Width) {
+void printMatrix(float* T, long Width) {
 	for(int i=0; i < Width; ++i) {
 		for(int j=0; j < Width; ++j) {
 			printf("%f ",T[i * Width + j]);
@@ -26,7 +26,7 @@ void printMatrix(float* T, int Width) {
 		printf("\n");
 	}
 }
-void createRandomMatrix(float* T, int Width) {
+void createRandomMatrix(float* T, long Width) {
 	srand(seed++);
 	float random = 5;
 	for(int i=0; i < Width; ++i) {
@@ -37,7 +37,7 @@ void createRandomMatrix(float* T, int Width) {
 	}
 }
 int main() {
-	const int Width = 100;
+	const long Width = 100;
 	float M[Width*Width],N[Width*Width],P[Width*Width];
 	unsigned int start = 0;
 	unsigned int end = 0;
